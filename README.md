@@ -6,8 +6,8 @@
 
 这个 `demo` 是在读 `@babel/core` 源码时，没找到为啥 `.babelignore` 生效了，也没找到相关说明写的一个 `demo` 来给 `babel` 官方团队提 `issue` 用的
 
-`issue` 地址[点这里](https://github.com/babel/babel/issues/16152)
-`issue` 解决地址[点这里](https://github.com/babel/website/pull/2854/files)
+`issue` 地址[点这里](https://github.com/babel/babel/issues/16152)<br/>
+`issue` 解决地址[点这里](https://github.com/babel/website/pull/2854/files)<br/>
 `demo` 地址[点这里](https://github.com/HydratedPig/Demos/tree/babel-ignore)
 
 ## Vue OOM
