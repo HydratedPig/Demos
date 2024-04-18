@@ -10,3 +10,6 @@ A: [`babel-plugin-jsx`](https://github.com/vuejs/babel-plugin-jsx) 在 `vite` �
 
 Q: 这个提效多少呢?<br/>
 A: 还不清楚，demo 还没写呢！
+
+
+尴尬了，`swc build` 产物和 `typescript` 不一致，`typescript` 可以配置 `"jsx": "preserve",` 但是 `swc` 没找到类似的功能，强行向 `react` 靠拢了，得看看 `rspack` 是如何解决 `vue-loader` 的问题了
