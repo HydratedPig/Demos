@@ -1,0 +1,11 @@
+{
+  "name": "@hydrated-demo/base",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "dev": "./index.ts"
+  },
+  "author": "HydratedPig",
+  "license": "ISC"
+}
