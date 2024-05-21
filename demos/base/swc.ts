@@ -8,15 +8,15 @@ export function loader(content: string, cfg: { requestDirPath: string, configFil
     jsc: {
       parser: {
         syntax: 'typescript',
-        tsx: true,
+        tsx: false,
         decorators: true,
       },
-      transform: {
-        react: {
-          runtime: 'automatic',
-          importSource: 'vue',
-        }
-      }
+      // transform: {
+      //   react: {
+      //     runtime: 'automatic',
+      //     importSource: 'vue',
+      //   }
+      // }
     }
   })
   return code;
