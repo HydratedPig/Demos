@@ -28,3 +28,9 @@
 为了方便在一个项目里完成 `demo` 使用了 `pnpm` 的 `monorepo`
 
 `demo` 地址[点这里](https://github.com/HydratedPig/Demos/tree/cjs-esm)
+
+## webpack-loader
+
+尝试下 webpack-loader ，同时测试下，如何把文件内容缓存并将多个文件作为另外一个文件打包
+
+`demo` 地址[点这里](https://github.com/HydratedPig/Demos/tree/webpack)
