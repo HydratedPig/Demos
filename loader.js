@@ -5,14 +5,13 @@ module.exports = function loader(content, map, meta) {
   if (this.cacheable) {
     this.cacheable();
   }
-
+  const callback = this.async()
   if (this.resourcePath.includes('svg-sprite.svg')) {
-    this.callback(null, `
+    callback(null, `
       console.log('this is svg-sprite.svg')
-      ${
-        cacheContainer.map((i, idx) => {
-          return `console.log('svg${idx}::', \`${i}\`)`
-        }).join(';\n')
+      ${cacheContainer.map((i, idx) => {
+      return `console.log('svg${idx}::', \`${i}\`)`
+    }).join(';\n')
       }
       `)
     return
@@ -22,10 +21,11 @@ module.exports = function loader(content, map, meta) {
 
   const loaderContext = this;
 
-  this.callback(null, `
+  setTimeout(() => {
+    callback(null, `
 import './svg-sprite.svg';
 console.log(\`${this.resourcePath}\`);
 export default '${this.resourcePath}'
     `)
-  debugger
+  }, 1000)
 }
