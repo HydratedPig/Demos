@@ -23,7 +23,7 @@ module.exports = function loader(content, map, meta) {
 
   setTimeout(() => {
     callback(null, `
-import './svg-sprite.svg';
+import '/assets/svg-sprite.svg';
 console.log(\`${this.resourcePath}\`);
 export default '${this.resourcePath}'
     `)
