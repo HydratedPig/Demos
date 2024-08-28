@@ -1,0 +1,7 @@
+packages:
+  - webpack/*
+  - vue-oom/*
+  - swc-tsc/*
+  - cjs-esm/*
+  - babel-ignore/*
+
