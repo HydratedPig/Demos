@@ -5,6 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "dev:cjs-esm": "pnpm -F main dev",
     "dev:base": "pnpm -F @hydrated-demo/base dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
