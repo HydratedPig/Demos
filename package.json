@@ -1,5 +1,5 @@
 {
-  "name": "demos",
+  "name": "@hydrated-demos",
   "version": "1.0.0",
   "description": "突发奇想，如果把 `vue-cli` 中 `ts-loader` 替换成 `swc` 会怎么样？",
   "main": "index.js",
