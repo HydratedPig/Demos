@@ -8,7 +8,7 @@
 
 `issue` 地址[点这里](https://github.com/babel/babel/issues/16152)<br/>
 `issue` 解决地址[点这里](https://github.com/babel/website/pull/2854/files)<br/>
-`demo` 地址[点这里](https://github.com/HydratedPig/Demos/tree/babel-ignore)
+`demo` 地址[点这里](https://github.com/HydratedPig/Demos/tree/babel-ignore/babel-ignore/core)
 
 ## Vue OOM
 
