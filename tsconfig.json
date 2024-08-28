@@ -31,6 +31,6 @@
     "jsxImportSource": "vue",
   },
   "include": [
-    "demos/**/*"
+    "swc-tsc/**/*",
   ]
 }
