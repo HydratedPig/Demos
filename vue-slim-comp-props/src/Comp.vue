@@ -13,7 +13,9 @@ const [DefineButton2, ReusedButton2] = createReusableTemplate<{
 }>()
 const [DefineInput, ReusedInput] = createReusableTemplate<{
   'modelValue': string
+  'modelValue2': string
   'onUpdate:modelValue'?: (value: string) => void
+  'onUpdate:modelValue2'?: (value: string) => void
   'onClick'?: (...args: any[]) => void
 }>()
 function handleButton1Click(name: string) {
@@ -37,7 +39,7 @@ function handleButton1Click(name: string) {
   </DefineButton2>
   <DefineInput v-slot="{ onClick, ...opt }">
     <input v-model="opt.modelValue" @update:model-value="opt['onUpdate:modelValue']">
-    {{ opt.modelValue }}
+    <input v-model="opt.modelValue2" @update:model-value="opt['onUpdate:modelValue2']">
     <button @click="onClick">
       v-model
     </button>

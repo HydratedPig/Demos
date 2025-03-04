@@ -11,6 +11,7 @@ function handleClickBtn1_2(compClick: (n: string) => void, name: string) {
   console.log('AppBtn::', name)
 }
 const inputV = ref('')
+const inputV2 = ref('')
 function handleClickInput1() {
   console.log('AppInputV', inputV.value)
 }
@@ -28,10 +29,13 @@ function handleClickInput1() {
       <component :is="comp" name="AppBtn2_1" />
     </template>
     <template #input1_1="{ comp }">
-      <component :is="comp" v-model="inputV" @click="handleClickInput1" />
+      <component :is="comp" v-model="inputV" v-model:model-value2="inputV2" @click="handleClickInput1" />
     </template>
   </Comp>
   <CompBad />
+
+  <div>InputModelValue: {{ inputV }}</div>
+  <div>InputModelValue2: {{ inputV2 }}</div>
 </template>
 
 <style scoped>
